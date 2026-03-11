@@ -19,7 +19,7 @@ Different AI CLI tools (OpenCode, Gemini, Iflow, Kilo, etc.) often have their ow
 
 ## 🎥 Demo
 
-![ai-tabs Demo](assets/demo.mp4)
+![ai-tabs Demo](https://github.com/user-attachments/assets/7b750998-d6cc-4d88-956d-8efd6323b13c)
 
 ## 🛠 Auto-Discovered Tools
 
