@@ -63,17 +63,15 @@ for item in "${SUPPORTED_TOOLS[@]}"; do
         SPATHS=("/opt/homebrew/bin/$NAME" "/usr/local/bin/$NAME" "$HOME/.local/bin/$NAME" "$HOME/.npm-global/bin/$NAME")
         for p in "${SPATHS[@]}"; do [[ -x "$p" ]] && TPATH="$p" && break; done
     fi
-    if [ -n "$TPATH" ]; then
-        FOUND_TOOLS+=("$NAME")
-        FOUND_CMDS+=("'$TPATH' $FLAG || '$TPATH' || exec \$SHELL")
-    fi
-done
-
 NUM=${#FOUND_CMDS[@]}
 [[ "$NUM" -eq 0 ]] && echo "❌ No supported AI tools found." && exit 1
 
-# Limit to 3 for sanity in split view, or keep all? Let's keep all but warn.
-[[ "$NUM" -gt 3 ]] && echo "👀 Found $NUM tools. Splitting $NUM ways might be cramped!"
+# Force limit to exactly 2 for "Duo" split view
+if [[ "$NUM" -gt 2 ]]; then
+    echo "💡 Found $NUM tools, but limiting to the first 2 for the perfect Duo Split."
+    FOUND_CMDS=("${FOUND_CMDS[@]:0:2}")
+    NUM=2
+fi
 
 # 3. AppleScript Orchestration (Split Logic)
 AS_SCRIPT="tell application \"System Events\"\n"
