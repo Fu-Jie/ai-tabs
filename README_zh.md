@@ -1,6 +1,6 @@
 # ai-tabs (macOS) 🚀
 
-> **VS Code 多 Agent 编排工具：一键批量启动 AI CLI，让 AI 们并联工作且永不休息，彻底打通多模型生产力。**
+> **VS Code 多 Agent 编排工具：通过高效输入让 AI 们并联工作且永不休息，彻底榨取多模型生产力。**
 
 [English](README.md) | [简体中文](README_zh.md)
 
