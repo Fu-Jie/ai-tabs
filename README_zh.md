@@ -31,7 +31,7 @@
 
 > [!TIP]
 > **薅羊毛攻略**：以下工具注册即有免费额度，零成本开启多 Agent 编程：
-> 1. **Gemini CLI** — 在 Google AI Studio 注册即可获得 API Key，每月有慷慨的免费额度。
+> 1. **Gemini CLI** — 登录 Google 账号即有免费额度，API Key 可通过 Google AI Studio 额外获取以扩展用量。
 > 2. **iFlow** — 注册即可免费使用 **Minimax M2.5** 模型，开箱即用。
 
 ## 🌟 核心特性

@@ -31,7 +31,7 @@ In the era of AI-driven development, programmers face several key challenges:
 
 > [!TIP]
 > **Free Tier Strategy**: These tools offer free quotas with just an account:
-> 1. **Gemini CLI** — Sign up at Google AI Studio for a free API Key with generous monthly quota.
+> 1. **Gemini CLI** — Just log in with your Google account to get a free quota. An API Key via Google AI Studio can be added for extra usage.
 > 2. **iFlow** — Comes with free access to the **Minimax M2.5** model out of the box.
 
 ## 🌟 Key Features
