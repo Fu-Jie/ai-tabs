@@ -52,17 +52,12 @@ if [ -f "$ENV_FILE" ]; then
     done
 fi
 
-for item in "${SUPPORTED_TOOLS[@]}"; do
-    NAME="${item%%:*}"
-    FLAG="${item#*:}"
-    ALREADY=false
-    for f in "${FOUND_TOOLS[@]}"; do [[ "$f" == "$NAME" ]] && ALREADY=true && break; done
-    [[ "$ALREADY" == true ]] && continue
-    TPATH=$(which "$NAME" 2>/dev/null)
-    if [ -z "$TPATH" ]; then
-        SPATHS=("/opt/homebrew/bin/$NAME" "/usr/local/bin/$NAME" "$HOME/.local/bin/$NAME" "$HOME/.npm-global/bin/$NAME")
-        for p in "${SPATHS[@]}"; do [[ -x "$p" ]] && TPATH="$p" && break; done
+    if [ -n "$TPATH" ]; then
+        FOUND_TOOLS+=("$NAME")
+        FOUND_CMDS+=("'$TPATH' $FLAG || '$TPATH' || exec \$SHELL")
     fi
+done
+
 NUM=${#FOUND_CMDS[@]}
 [[ "$NUM" -eq 0 ]] && echo "❌ No supported AI tools found." && exit 1
 
