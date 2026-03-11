@@ -19,7 +19,15 @@ In the era of AI-driven development, programmers face several key challenges:
 2. **Model Bias**: No single model is perfect; complex tasks often require cross-checking and switching between different providers.
 3. **Context Friction**: Switching between various terminal windows is clunky and breaks your "flow."
 
-**ai-tabs ensures there's "No Rest for Agents"**: By orchestrating multiple AI CLIs into VS Code editor tabs, you can switch between AI Agents as easily as switching code files—achieving **seamless productivity relay**.
+**ai-tabs ensures "No Rest for Agents"**: By orchestrating multiple AI CLIs into VS Code editor tabs, you can switch between AI Agents as easily as switching code files.
+
+### Key Value Props:
+- **Zero Context-Switching Friction**: No more jumping between standalone terminal apps or browser tabs. Your AI workspace lives right next to your code.
+- **Multi-Agent Synergy**: 
+    - Use **Claude** for high-level refactoring;
+    - Use **Gemini** to simultaneously generate unit tests;
+    - Use **OpenCode** to profile performance bottlenecks in real-time.
+- **Maximize Free Quotas**: Seamlessly relay tasks between different providers. If one hits a rate limit, simply click the next tab and keep moving.
 
 ## 🌟 Key Features
 
